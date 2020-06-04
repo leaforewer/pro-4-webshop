@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Gegenereerd op: 02 mrt 2020 om 11:56
+-- Gegenereerd op: 04 jun 2020 om 09:35
 -- Serverversie: 5.7.26
 -- PHP-versie: 7.2.18
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `adhd`
+-- Database: `smartwatch`
 --
 
 -- --------------------------------------------------------
@@ -30,13 +30,12 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `register`;
 CREATE TABLE IF NOT EXISTS `register` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(100) NOT NULL,
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `email` varchar(100) NOT NULL,
   `password` varchar(60) NOT NULL,
-  `nationaliteit` varchar(40) NOT NULL,
-  `handteken` varchar(10) NOT NULL,
-  `userrole` enum('admin','root','customer','moderator') NOT NULL DEFAULT 'customer',
+  `handteken` bit(1) NOT NULL,
+  `userrole` enum('admin','root','customer','') NOT NULL DEFAULT 'customer',
+  `activated` bit(1) NOT NULL DEFAULT b'0',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 COMMIT;
