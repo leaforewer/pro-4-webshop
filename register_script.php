@@ -1,91 +1,93 @@
 <?php
+    
+    // var_dump($_POST);
 
-if (empty($_POST["email"])) {
-    header("Location: ./in1dex.php?content=message&alert=no-email");
-} else {
-    include("./connect_db.php");
-    include("./functions.php");
-
-    // De $_POST waarde schoonmaken     
-    $email   = sanitize($_POST["email"]);
-
-    // Maak de selectie query..
-    $sql = "SELECT * FROM `register` WHERE `email` = '{$email}'";
-
-    // echo $sql;
-
-    // Vuur de query af op de database..
-    $result = mysqli_query($conn, $sql);
-
-    // Hoeveel records zijn er gevonden?
-
-    if (mysqli_num_rows($result)) {
-        header("Location: ./index.php?content=message&alert=emailexists");
+    if ( empty($_POST["email"])) {
+        header("Location: ./index.php?content=message&alert=no-email");
     } else {
+        // Eerst contact maken met de mysql-server
+        include("./connect_db.php");
+        // include("./sanitize.php");
+        include("./functions.php");
 
-        $handteken = sanitize($_POST["handteken"]);
-        $array = mk_password_hash_from_microtime();
+        // De $_POST["email"] waarde schoonmaken
+        $email = sanitize($_POST["email"]);
 
+        // Maak de selectie query... 
+        $sql = "SELECT * FROM `register` WHERE `email` = '{$email}'";
+        // echo $sql; exit();
+        // Vuur de query af op de database...
+        $result = mysqli_query($conn, $sql);
+        // $record = mysqli_fetch_assoc($result);
+        // var_dump($record); exit();
+        // echo mysqli_num_rows($result);
+        // Hoeveel records zijn er gevonden?
+        if (mysqli_num_rows($result)) {
+            header("Location: ./index.php?content=message&alert=emailexists");
+        } else {
+            // De functie mk_password_hash_from_microtime() maakt een password hash,
+            // haalt de tijd en datum op op basis van de php-functie microtime()
+            // en geeft dit terug in $array
+            $array = mk_password_hash_from_microtime();
 
-        $sql = "INSERT INTO `register` 
-                            (`id`, 
-                            `email`, 
-                            `password`,
-                            `handteken`, 
-                            `userrole`,
-                            `activated`) 
-                VALUES (NULL,
+            $sql = "INSERT INTO `register` (`id`,
+                                            `email`,
+                                            `password`,
+                                            `userrole`,
+                                            `activated`)
+                                            VALUES (NULL,
                             '$email', 
                             '{$array["password_hash"]}', 
                             '$handteken',
                             'customer',
                              0);";
 
-        // echo $sql;exit();
+        //  Vuur de query af op de tabel in de database
         $result = mysqli_query($conn, $sql);
 
+        // Deze functie 
+        $id = mysqli_insert_id($conn);
+        
         if ($result) {
-            $id = mysqli_insert_id($conn);
             $to = $email;
-            $subject = "Activatielink voor uw account van My Guitar Hero.com";
-            // include("./alt-email.php");
-            $msg = '<!DOCTYPE html>
-                    <html lang="en">
-            
-                    <head>
-                    <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>MyGuitarHero</title>
-                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-                    <style>
-                        body {
-                            background-color: #dddddd;
-                            font-size: 1.3em;
-                        }
-                    </style>
-                    </head>
-                    <body>
-                        <h2>' . $array["date"] . ' - ' . $array["time"] . '</h2>
-                        <h1>Beste gebruiker, </h1>
-                        <hr/>
-                        <p>U heeft zich zojuist geregisteerd op de site www.myguitarhero.com</p>
-                        <p>Door het klikken op de onderstaande voltooid u het activatieprocess</p>
-                        <p>Klik <a href="http://www.myguitarhero.com/index.php?content=activate&id=' . $id . '&pwh=' . $array['password_hash'] . '">hier</a> voor activatie</p>
-                        <p>Bedankt voor het registereren</p>
-                        <p>Met vriendelijke groet,</p>
-                        <p>A. Cemal Erdogan</p>
-                        <p>CEO MyGuitarHero.com</p>
-                    </body>
-                    </html>';
-            $headers =  "MIME-Version: 1.0\r\n";
-            $headers .= "Content-type: text/html; charset-UTF-8\r\n";
-            $headers .= "From: admin@myguitarhero.com\r\n";
-            $headers .= "Cc: hoofdinspecteur@belanstingdienst.nl\r\n";
+            $subject = "Uw activatielink voor uw account van autos.nl";
+
+            $message = '<!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Document</title>
+                        </head>
+                        <body> 
+                            <h1>Beste gebruiker,</h1>
+                            <p>U heeft zich zojuist geregistreerd op de site www.autos.nl</p>
+                            <p>Door het klikken op de onderstaande link voltooid u het activatieproces</p>
+                            <p>Klik <a href="http://www.autos.org/index.php?content=activate&id=' . $id . '&pwh=' . $array['password_hash'] . '">hier</a> voor activatie</p>
+                            <p>Bedankt voor het registreren</p>
+                            <p>Met vriendelijke groet,</p>
+                            <p>T. Berk Kiymaz</p>
+                            <p>CEO autos.nl</p> 
+                            <p>'. $array["date"] . ' - ' . $array["time"] . '<p>
+                        </body>
+                        </html>';
+                            
+
+            $headers = "MIME-Version: 1.0\r\n";
+            $headers .= "Content-type: text/html; charset=UTF-8\r\n";
+            $headers .= "From: admin@autos.nl\r\n";
+            $headers .= "Cc: hoofdinspecteur@belastingdienst.nl\r\n";
             $headers .= "Bcc: politie@politie.nl";
-            mail($to, $subject, $msg, $headers);
-            header("Location: ./index.php?content=message&alert=register-success");
+            $headers .= "Datum: '. $d . ' - ' . $t . '";
+
+        
+            mail($to, $subject, $message, $headers); 
+            header("Location: ./index.php?content=message&alert=register-success"); 
         } else {
             header("Location: ./index.php?content=message&alert=insert-mail-error");
         }
+        }
+        
+
     }
-}
+?>
