@@ -28,11 +28,13 @@
             // De functie mk_password_hash_from_microtime() maakt een password hash,
             // haalt de tijd en datum op op basis van de php-functie microtime()
             // en geeft dit terug in $array
+            $handteken = sanitize($_POST["handteken"]);
             $array = mk_password_hash_from_microtime();
 
             $sql = "INSERT INTO `register` (`id`,
                                             `email`,
                                             `password`,
+                                            `handteken`,
                                             `userrole`,
                                             `activated`)
                                             VALUES (NULL,
@@ -41,6 +43,7 @@
                             '$handteken',
                             'customer',
                              0);";
+                            //  echo $sql; exit();
 
         //  Vuur de query af op de tabel in de database
         $result = mysqli_query($conn, $sql);
