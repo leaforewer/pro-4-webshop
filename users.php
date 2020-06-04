@@ -3,7 +3,7 @@ $per_page = 4;
 
 include("./connect_db.php");
 
-$sql = "SELECT * FROM `users`";
+$sql = "SELECT * FROM `register`";
 
 $result = mysqli_query($conn, $sql);
 
@@ -18,7 +18,7 @@ if (isset($_GET["page"])) {
 
 $start = ($page - 1) * $per_page;
 
-$sql = "SELECT * FROM `users` order by id limit $start,$per_page";
+$sql = "SELECT * FROM `register` order by id limit $start,$per_page";
 
 // Dit is de functie die de query $sql via de verbinding $conn naar de database stuurt.
 $result = mysqli_query($conn, $sql);
@@ -30,11 +30,10 @@ while ($record = mysqli_fetch_assoc($result)) {
     // var_dump($record);
     $records .= "<tr>
                     <th scope='row'>" . $record["id"] . "</th>
-                    <td>" . $record["username"] . "</td>
                     <td>" . $record["email"] . "</td>
                     <td>" . $record["password"] . "</td>
                     <td>" . $record["handteken"] . "</td>
-                    <td>" . $record["nationaliteit"] . "</td>
+                    <td>" . $record["userrole"] . "</td>
                     <td>
                         <a href='./index.php?content=update_users&id=" . $record["id"] . "'>
                             <img src='./img/icons/b_edit.png' alt=; pencil'>
@@ -82,11 +81,10 @@ while ($record = mysqli_fetch_assoc($result)) {
                     <thead>
                         <tr>
                             <th scope="col">ID</th>
-                            <th scope="col">Username</th>
                             <th scope="col">Email</th>
                             <th scope="col">Password</th>
                             <th scope="col">Handteken</th>
-                            <th scope="col">Nationaliteit</th>
+                            <th scope="col">Userrole</th>
                         </tr>
                     </thead>
                     <tbody>
