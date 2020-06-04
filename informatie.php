@@ -21,10 +21,12 @@
         </div>
         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="card-body">
-                De afkorting ADHD staat voor Attention Deficit Hyperactivity Disorder.
-                In het Nederlands betekent dat aandachtstekortstoornis met hyperactiviteit.
-                De hersenen van mensen met ADHD reageren sneller op prikkels (impulsen, stemmingen en gebeurtenissen).
-                Dit kan ertoe leiden dat je snel bent afgeleid en je je moeilijk kunt concentreren.
+            Een smartwatch is een type polshorloge dat niet alleen 
+            dient als uurwerk maar ook een reeks andere functies heeft. Een smartwatch is vergelijkbaar met 
+            elektronische handapparaten zoals een smartphone, maar wordt aan de pols bevestigd.
+            Sommige smartwatches zijn speciaal uitgerust als sportwatch of fitness band met functies en 
+            sensoren om sportieve activiteit te ondersteunen. Dergelijke functies omvatten onder meer 
+            trainingsprogramma's, het tonen van snelheid en rondetijden, een duikcomputer en een hartslagmonitor/polsmonitor.
             </div>
         </div>
     </div>
@@ -61,16 +63,14 @@
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
             <div class="card-body">
                 <p>
-                    Hoe ADHD bij een kind naar voren komt is niet vantevoren aan te geven.
-                    Net als ieder kind uniek is, is ook ieder kind met ADHD uniek.
-                    Ook gedrag is verschillend.
-                    Kinderen met ADHD zijn niet altijd druk, ze zijn niet allemaal impulsief en ze zijn ook niet allemaal ongeconcentreerd.
+                Wij repareren vrijwel alle merken. Zonder onderzoekskosten!
+                Bij onze winkel bent u aan het juiste adres voor uw Smartwatch reparatie. 
+                Dankzij onze ervaren reparateur(s) en uitsluitend originele onderdelen ziet uw Smartwatch er weer als vanouds uit.
                     <br>
                     <br>
-
-                    De belangrijkste kenmerken van ADHD bij volwassenen zijn:
-                    problemen met de aandacht of de concentratie, moeite met organiseren,
-                    hyperactief of overbeweeglijk zijn en impulsiviteit.
+                Wanneer u  niet precies weet wat er defect is, onderzoeken wij het defect. 
+                Wanneer blijkt dat een Smartwatch reparatie noodzakelijk is, wordt dit van tevoren gemeld 
+                inclusief de reparatiekosten.
                 </p>
 
             </div>
