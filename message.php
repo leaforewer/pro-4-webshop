@@ -11,7 +11,7 @@
             <hr>
             <p class="mb-0">Probeer het opnieuw</p>
             </div>';
-            header("Refresh: 3; ./index.php?content=aanmelden");
+            header("Refresh: 3; ./index.php?content=register");
         break;
         case 'no-email2': 
             echo'<div class="alert alert-info w-50 mx-auto mt-5" name="alert" role="alert">
@@ -29,7 +29,7 @@
             <hr>
             <p class="mb-0">U wordt teruggestuurd naar de registratiepagina</p>
             </div>';
-            header("Refresh: 3; ./index.php?content=aanmelden");
+            header("Refresh: 3; ./index.php?content=register");
         break;
         case 'insert-mail-error':
             echo'<div class="alert alert-danger w-50 mx-auto mt-5" name="alert" role="alert">
@@ -96,7 +96,7 @@
             <p>U wordt teruggestuurd naar de wachtwoord pagina</p>
             <hr>
             </div>';
-            header("Refresh: 3; ./index.php?content=aanmelden");
+            header("Refresh: 3; ./index.php?content=register");
         break;
         case 'update-success':
             echo'<div class="alert alert-success w-50 mx-auto mt-5" name="alert" role="alert">
@@ -124,7 +124,7 @@
             <h4 class="alert-heading">Uw activatielinkgegevens zijn niet correct, registreer opnieuw</h4>
             <hr>
             </div>';
-            header("Refresh: 3; ./index.php?content=aanmelden");
+            header("Refresh: 3; ./index.php?content=register");
         break;
         default:
 
