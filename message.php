@@ -38,7 +38,7 @@
             <hr>
             <p class="mb-0">U wordt teruggestuurd naar de registratiepagina</p>
             </div>';
-            header("Refresh: 3; ./index.php?content=aanmelden");
+            header("Refresh: 3; ./index.php?content=register");
         break;
         case 'register-success':
             // $time = 6;
