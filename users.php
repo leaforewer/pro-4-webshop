@@ -3,7 +3,7 @@ $per_page = 4;
 
 include("./connect_db.php");
 
-$sql = "SELECT * FROM `register`";
+$sql = "SELECT * FROM `users`";
 
 $result = mysqli_query($conn, $sql);
 
