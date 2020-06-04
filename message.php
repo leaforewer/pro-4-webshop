@@ -50,7 +50,7 @@
             <hr>
             <p class="mb-0">U wordt teruggestuurd naar de inlogpagina</p>
             </div>';
-            header("Refresh: 3; ./index.php?content=inloggen");
+            header("Refresh: 3; ./index.php?content=inlog");
         break;
         case 'contact-success':
             // $time = 6;
@@ -103,7 +103,7 @@
             <h4 class="alert-heading">U bent succesvol geregistreerd, u wordt doorgestuurd naar de inlogpagina... </h4>
             <hr>
             </div>';
-            header("Refresh: 3; ./index.php?content=inloggen");
+            header("Refresh: 3; ./index.php?content=inlog");
         break;
         case 'update-error':
             echo'<div class="alert alert-danger w-50 mx-auto mt-5" name="alert" role="alert">
@@ -117,7 +117,7 @@
             <h4 class="alert-heading">Uw account is al actief, log in met uw zelfgekozen wachtwoord en emailadres.</h4>
             <hr>
             </div>';
-            header("Refresh: 3; ./index.php?content=inloggen");
+            header("Refresh: 3; ./index.php?content=inlog");
         break;
         case 'no-match-pwh':
             echo'<div class="alert alert-danger w-50 mx-auto mt-5" name="alert" role="alert">

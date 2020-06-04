@@ -53,7 +53,7 @@
         
         if ($result) {
             $to = $email;
-            $subject = "Uw activatielink voor uw account van autos.nl";
+            $subject = "Uw activatielink voor uw account van smartwatch.com";
 
             $message = '<!DOCTYPE html>
                         <html lang="en">
@@ -64,13 +64,12 @@
                         </head>
                         <body> 
                             <h1>Beste gebruiker,</h1>
-                            <p>U heeft zich zojuist geregistreerd op de site www.autos.nl</p>
+                            <p>U heeft zich zojuist geregistreerd op de site www.smartwatch.com</p>
                             <p>Door het klikken op de onderstaande link voltooid u het activatieproces</p>
-                            <p>Klik <a href="http://www.autos.org/index.php?content=activate&id=' . $id . '&pwh=' . $array['password_hash'] . '">hier</a> voor activatie</p>
+                            <p>Klik <a href="http://www.smartwatches.com/index.php?content=activate&id=' . $id . '&pwh=' . $array['password_hash'] . '">hier</a> voor activatie</p>
                             <p>Bedankt voor het registreren</p>
                             <p>Met vriendelijke groet,</p>
-                            <p>T. Berk Kiymaz</p>
-                            <p>CEO autos.nl</p> 
+                            <p>Smartwatches</p> 
                             <p>'. $array["date"] . ' - ' . $array["time"] . '<p>
                         </body>
                         </html>';
@@ -78,7 +77,7 @@
 
             $headers = "MIME-Version: 1.0\r\n";
             $headers .= "Content-type: text/html; charset=UTF-8\r\n";
-            $headers .= "From: admin@autos.nl\r\n";
+            $headers .= "From: admin@smartwatches.com\r\n";
             $headers .= "Cc: hoofdinspecteur@belastingdienst.nl\r\n";
             $headers .= "Bcc: politie@politie.nl";
             $headers .= "Datum: '. $d . ' - ' . $t . '";

@@ -5,18 +5,16 @@
     include("./functions.php");
 
     $id = $_POST["id"];
-    $username = sanitize($_POST["username"]);
     $email = sanitize($_POST["email"]);
     $password = sanitize($_POST["password"]);
     $handteken = sanitize($_POST["handteken"]);
-    $nationaliteit = sanitize($_POST["nationaliteit"]);
+    $userrole = sanitize($_POST["userrole"]);
 
     $sql = "UPDATE `users` 
-                SET `username` = '$username', 
                     `email` = '$email', 
                     `password` = '$password',
                     `handteken` = '$handteken',
-                    `nationaliteit` = '$nationaliteit'  
+                    `userrole` = '$userrole'  
             WHERE `id` = $id;";
 
     mysqli_query($conn, $sql);
