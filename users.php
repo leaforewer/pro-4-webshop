@@ -1,9 +1,9 @@
 <?php
-$per_page = 4;
+$per_page = 5;
 
 include("./connect_db.php");
 
-$sql = "SELECT * FROM `users`";
+$sql = "SELECT * FROM `register`";
 
 $result = mysqli_query($conn, $sql);
 
@@ -23,17 +23,20 @@ $sql = "SELECT * FROM `register` order by id limit $start,$per_page";
 // Dit is de functie die de query $sql via de verbinding $conn naar de database stuurt.
 $result = mysqli_query($conn, $sql);
 
-
+$text = "Admin Panel";
 $records = "";
 // De while loop geeft alle gegevens weer uit de tabel users.
 while ($record = mysqli_fetch_assoc($result)) {
     // var_dump($record);
-    $records .= "<tr>
+    $records .=
+        "
+        <tr>
                     <th scope='row'>" . $record["id"] . "</th>
                     <td>" . $record["email"] . "</td>
                     <td>" . $record["password"] . "</td>
                     <td>" . $record["handteken"] . "</td>
                     <td>" . $record["userrole"] . "</td>
+                    <td>" . $record["activated"] . "</td>
                     <td>
                         <a href='./index.php?content=update_users&id=" . $record["id"] . "'>
                             <img src='./img/icons/b_edit.png' alt=; pencil'>
@@ -69,15 +72,21 @@ while ($record = mysqli_fetch_assoc($result)) {
     <title>Hello, world!</title>
 </head>
 
-<body>
+<body style="background-color: gray;">
 
 
-    <main class="container">
+    <main class="container users">
 
         <div class="row">
             <div class="col-12">
+                <br />
+                <p style="font-size:32px ; 
+                          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                          font-style: italic;">Admin panel</p>
                 <!-- Op deze plek komt de tabel -->
-                <table class="table table-hover">
+                <table class="table table-hover" style="background-color: #262935; 
+                                                        color: whitesmoke; 
+                                                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
                     <thead>
                         <tr>
                             <th scope="col">ID</th>
