@@ -38,7 +38,7 @@ while ($record = mysqli_fetch_assoc($result)) {
                     <td>" . $record["userrole"] . "</td>
                     <td>" . $record["activated"] . "</td>
                     <td>
-                        <a href='./index.php?content=update_users&id=" . $record["id"] . "'>
+                        <a style=':hover color: white;' href='./index.php?content=update_users&id=" . $record["id"] . "'>
                             <img src='./img/icons/b_edit.png' alt=; pencil'>
                         </a>
                     </td>
@@ -70,6 +70,11 @@ while ($record = mysqli_fetch_assoc($result)) {
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script|Pangolin&display=swap" rel="stylesheet">
     <title>Hello, world!</title>
+
+<style>
+.user {color: whitesmoke;}
+.user:hover {color: orange;}
+</style>
 </head>
 
 <body style="background-color: gray;">
@@ -96,7 +101,7 @@ while ($record = mysqli_fetch_assoc($result)) {
                             <th scope="col">Userrole</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="user">
                         <?php
                         echo $records;
                         ?>
