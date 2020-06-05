@@ -13,7 +13,7 @@ if (empty($_POST["password"]) || empty($_POST["passwordCheck"])) {
     header("Location: ./index.php?content=message&alert=nomatch-password&id=$id&pwh=$pwh");
 } else {
 
-    $sql = "SELECT * FROM `users` WHERE `id` = $id";
+    $sql = "SELECT * FROM `register` WHERE `id` = $id";
 
     $result = mysqli_query($conn, $sql);
 
@@ -30,8 +30,8 @@ if (empty($_POST["password"]) || empty($_POST["passwordCheck"])) {
                 $password_hash = password_hash($password, PASSWORD_BCRYPT);
 
                 // 2. Ga het record updaten met het nieuw gekozen gehashte wachtwoord.
-                $sql = "UPDATE `users`
-                            SET    `password` = '$password_hash'.
+                $sql = "UPDATE `register`
+                            SET    `password` = '$password_hash',
                                    `activated`= 1
                             WHERE  `id` = $id
                             AND    `password` = '$pwh'";

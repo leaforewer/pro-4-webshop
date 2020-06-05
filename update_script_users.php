@@ -10,7 +10,7 @@
     $handteken = sanitize($_POST["handteken"]);
     $userrole = sanitize($_POST["userrole"]);
 
-    $sql = "UPDATE `users` 
+    $sql = "UPDATE `register` 
                     `email` = '$email', 
                     `password` = '$password',
                     `handteken` = '$handteken',

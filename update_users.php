@@ -3,7 +3,7 @@ $id = $_GET["id"];
 
 include("./connect_db.php");
 
-$sql = "SELECT * FROM `users` WHERE `id` = $id";
+$sql = "SELECT * FROM `register` WHERE `id` = $id";
 
 $result = mysqli_query($conn, $sql);
 
