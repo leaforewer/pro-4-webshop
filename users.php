@@ -86,6 +86,7 @@ while ($record = mysqli_fetch_assoc($result)) {
             <div class="col-12">
                 <br />
                 <p style="font-size:32px ; 
+                          padding-bottom: 30px;
                           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                           font-style: italic;">Admin panel</p>
                 <!-- Op deze plek komt de tabel -->

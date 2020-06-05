@@ -11,12 +11,12 @@
     $userrole = sanitize($_POST["userrole"]);
     $activated =sanitize($_POST["activated"]);
 
-    $sql = "UPDATE `register` 
+    $sql = "UPDATE `register` SET 
                     `email` = '$email', 
                     `password` = '$password',
                     `handteken` = '$handteken',
                     `userrole` = '$userrole' ,
-                    `activated` = '$activated'
+                    `activated` = $activated
             WHERE `id` = $id;";
 
     mysqli_query($conn, $sql);
