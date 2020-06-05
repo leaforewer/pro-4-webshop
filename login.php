@@ -5,11 +5,6 @@
     <form action="./index.php?content=login_script" method="post">
         <form action="" method="post">
             <div class="form-group">
-                <label for="firstname">Gebruikersnaam</label>
-                <input type="text" class="form-control" id="gebruikersnaam" aria-describedby="gebruikersnaamHelp" name="gebruikersnaam">
-                <small id="gebruikersnaamHelp" class="form-text text-muted">*Vul hier uw gebruikersnaam in.</small>
-            </div>
-            <div class="form-group">
                 <label for="infix">E-mailadres</label>
                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
                 <small id="emailHelp" class="form-text text-muted">*Vul hier uw e-mailadres in.</small>

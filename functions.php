@@ -3,6 +3,7 @@
         global $conn;
         $data = htmlspecialchars($raw_data);
         $data = mysqli_real_escape_string($conn, $data);
+        $data = trim($data);
         return $data;
     }
 
