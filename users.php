@@ -69,7 +69,7 @@ while ($record = mysqli_fetch_assoc($result)) {
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script|Pangolin&display=swap" rel="stylesheet">
-    <title>Hello, world!</title>
+    <title>Users</title>
 
 <style>
 .user {color: whitesmoke;}
