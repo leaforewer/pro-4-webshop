@@ -30,25 +30,37 @@
         </form>
     </nav>
 
-  <div class="navbar-centered collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav mr-auto lg-0" id="navItems">
-        <ul class="navbar-nav mr-auto lg-0">
-            <li class="nav-item <?php if ($active == "home") {echo "active";} ?>">
-                <a class="nav-link" id="navText" href="./index.php?content=home">Home</a>
-            </li>
-            <li class="nav-item <?php if ($active == "home") {echo "active";} ?>">
-                <a class="nav-link" id="navText" href="./index.php?content=products">Ewatches</a>
-            </li>
-            <li class="nav-item <?php if ($active == "home") {echo "active";} ?>">
-                <a class="nav-link" id="navText" href="./index.php?content=informatie">Informatie</a>
-            </li>
-            <li class="nav-item <?php if ($active == "home") {echo "active";} ?>">
-                <a class="nav-link" id="navText" href="./index.php?content=contact">Contact</a>
-            </li>
-            <li class="nav-item <?php if ($active == "home") {echo "active";} ?>">
-                <a class="nav-link" href="./index.php?content=home"></a>
-            </li>
-        </ul>
-    </div>
+  <div class=" collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mr-auto lg-0" id="navItems">
+            <ul class="navbar-centered navbar-nav mr-auto lg-0">
+                <li class="nav-item <?php if ($active == "home") {echo "active";} ?>">
+                    <a class="nav-link" id="navText" href="./index.php?content=home">Home</a>
+                </li>
+                <li class="nav-item <?php if ($active == "home") {echo "active";} ?>">
+                    <a class="nav-link" id="navText" href="./index.php?content=products">Ewatches</a>
+                </li>
+                <li class="nav-item <?php if ($active == "home") {echo "active";} ?>">
+                    <a class="nav-link" id="navText" href="./index.php?content=informatie">Informatie</a>
+                </li>
+                <li class="nav-item <?php if ($active == "home") {echo "active";} ?>">
+                    <a class="nav-link" id="navText" href="./index.php?content=contact">Contact</a>
+                </li>
+                <li class="nav-item <?php if ($active == "home") {echo "active";} ?>">
+                    <a class="nav-link" href="./index.php?content=home"></a>
+                </li>
+            </ul>              
+        </div>    
   </div>
+   
+  
+  <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a href="#"> Sign Up</a>
+        </li>
+        <li>
+            <a href="#">Login</a>
+        </li>
+    </ul>     
+
+  
 </nav>
