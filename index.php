@@ -16,7 +16,9 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/navbar.css">
+        <link rel="stylesheet" href="./css/navbar.css">     
+        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/style.css">
 
 
 
@@ -50,14 +52,14 @@
 
 
             <!-- footer -->
-            <section>
-                <div class="row sticky-bottom container-fluid">
-                    <div class="col-12">
-                        <footer  id="footer">
-                        <?php include("./footer.php")?>
-                        </footer>
+            <section >
+                <footer id="footer" class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <?php include("./footer.php")?>                       
+                        </div>
                     </div>
-                </div>
+                </footer>                
             </section>
 
         </main>
