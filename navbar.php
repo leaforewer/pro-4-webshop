@@ -18,6 +18,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
+ <!-- search bar -->
     <nav class="">
         <form class="form-inline">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -30,6 +31,7 @@
         </form>
     </nav>
 
+ <!-- nav paginas  -->
   <div class=" collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav mr-auto lg-0" id="navItems">
             <ul class="navbar-centered navbar-nav mr-auto lg-0">
@@ -52,7 +54,7 @@
         </div>    
   </div>
    
-  
+  <!-- registreer en login button -->
   <div class="navbar">
     <ul class="nav navbar-nav navbar-right mr-auto lg-0">
             <li class="nav-item <?php if ($active == "home") {echo "active";} ?>">
@@ -61,7 +63,7 @@
                         <path fill-rule="evenodd" d="M8.146 11.354a.5.5 0 0 1 0-.708L10.793 8 8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/>
                         <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 1 8z"/>
                         <path fill-rule="evenodd" d="M13.5 14.5A1.5 1.5 0 0 0 15 13V3a1.5 1.5 0 0 0-1.5-1.5h-8A1.5 1.5 0 0 0 4 3v1.5a.5.5 0 0 0 1 0V3a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5h-8A.5.5 0 0 1 5 13v-1.5a.5.5 0 0 0-1 0V13a1.5 1.5 0 0 0 1.5 1.5h8z"/>
-                    </svg>Reigistreren
+                    </svg>Registreren
                 </a>
             </li>
             <li class="nav-item <?php if ($active == "home") {echo "active";} ?>">
@@ -72,7 +74,5 @@
                 </a>
             </li>
         </ul>     
-  </div>
-
-  
+  </div>  
 </nav>
