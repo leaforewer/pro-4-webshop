@@ -113,6 +113,11 @@ img::-moz-selection {
     padding: 15px;
 }
 
+ul#menu li {
+    display: inline;
+    list-style-type: none;
+}
+
 #Help {
     color: whitesmoke;
 }
