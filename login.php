@@ -12,25 +12,15 @@
             <div class="form-group">
                 <label for="lastname">Wachtwoord</label>
                 <input type="password" class="form-control" id="password" aria-describedby="passwordHelp" name="password">
-<<<<<<< HEAD
-                <small id="passwordHelp" class="form-text text-muted">Vul hier uw wachtwoord in.</small>
-            </div>
-            <div class="col-12" style="padding: 15px;">
-                <button type="submit" class="btn btn-primary submit">Versturen</button>
-            </div>
-
-        </form>
-=======
                 <small id="passwordHelp" class="form-text text-muted">*Vul hier uw wachtwoord in.</small>
             </div> 
             
             <div class="col-12" id="loginButton">                
-                <button type="button" class="btn btn-primary">versturen</button>                              
+                <button type="submit" class="btn btn-primary">versturen</button>                              
             </div>                      
         </form>        
             
                    
->>>>>>> 1b9f07bea062f939016de95a7e6793564520d20b
     </div>
     <div class="col-12" style="padding: 15px;">
         <div class="form-group">

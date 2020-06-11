@@ -32,7 +32,7 @@
             </div>
 
             <div class="col-12" id="registerButton">
-                <button type="button" class="btn btn-primary">versturen</button>
+                <button type="submit" class="btn btn-primary">versturen</button>
             </div>
         </form>
     </div>

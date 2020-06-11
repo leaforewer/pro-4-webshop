@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
     <div >
         <div class="row" >
             <div class="col-3">                
@@ -46,4 +44,3 @@
             </div>
         </div>
     </div>
->>>>>>> 786215cb7341dd2e1a788a16e85504dcc829b971
