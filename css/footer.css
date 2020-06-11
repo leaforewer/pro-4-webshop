@@ -1,0 +1,13 @@
+#footer {
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 2px;
+    padding: 20px;   
+    background-color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+
+#footerText1 {
+    text-emphasis-color: rgb(211, 221, 228);    
+    
+}

@@ -9,15 +9,17 @@
     $password = sanitize($_POST["password"]);
     $handteken = sanitize($_POST["handteken"]);
     $userrole = sanitize($_POST["userrole"]);
+    $activated =sanitize($_POST["activated"]);
 
-    $sql = "UPDATE `register` 
+    $sql = "UPDATE `register` SET 
                     `email` = '$email', 
                     `password` = '$password',
                     `handteken` = '$handteken',
-                    `userrole` = '$userrole'  
+                    `userrole` = '$userrole' ,
+                    `activated` = $activated
             WHERE `id` = $id;";
 
     mysqli_query($conn, $sql);
-
+// echo $sql; exit();
     header("Location: ./index.php?content=users")
 ?>
