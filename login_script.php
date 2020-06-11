@@ -35,6 +35,10 @@ if (empty($email) || empty($password)) {
         } else {
             // password matched
 
+            // session_start();
+            $_SESSION["id"] = $record["id"];
+            $_SESSION["userrole"] = $record["userrole"];
+            
             switch ($record["userrole"]) {
                 case 'customer':
                     header("Location: ./index.php?content=c-home");
