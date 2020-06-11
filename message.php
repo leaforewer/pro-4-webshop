@@ -155,6 +155,13 @@
             </div>';
             header("Refresh: 3; ./index.php?content=login");
         break;
+        case 'logout':
+            echo'<div class="alert alert-danger w-50 mx-auto mt-5" name="alert" role="alert">
+            <h4 class="alert-heading">U bent uitgelogd, u wordt doorgestuurd naar de homepage...</h4>
+            <hr>
+            </div>';
+            header("Refresh: 3; ./index.php?content=home");
+        break;
         default:
 
     break;

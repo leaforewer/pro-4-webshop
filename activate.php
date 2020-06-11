@@ -13,7 +13,7 @@ if (!(isset ($_GET["content"]) && isset ($_GET["id"]) && isset ($_GET["pwh"]))){
 
             <div class="form-group">
                 <label for="inputPassword">Wachtwoord</label>
-                <input type="password" name="password" class="form-control" id="inputPassword" aria-describedby="passwordHelp">
+                <input type="password" name="password" class="form-control" id="inputPassword" aria-describedby="passwordHelp" autofocus>
                 <small id="passwordHelp" class="form-text text-muted">Kies een veilig wachtwoord</small>
             </div>
             <div class="form-group">
