@@ -6,7 +6,7 @@
         <form action="" method="post">
             <div class="form-group">
                 <label for="infix">E-mailadres</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" autofocus>
                 <small id="emailHelp" class="form-text text-muted">Vul hier uw e-mailadres in.</small>
             </div>
             <div class="form-group">

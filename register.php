@@ -11,7 +11,7 @@
         <form action="./index.php?content=register_script" method="post">
             <div class="form-group">
                 <label for="firstname">Gebruikersnaam</label>
-                <input type="text" class="form-control" id="username" aria-describedby="usernameHelp" name="username">
+                <input type="text" class="form-control" id="username" aria-describedby="usernameHelp" name="username" autofocus>
                 <small id="Help" class="form-text ">*Verplicht veld</small>
             </div>
             <div class="form-group">
