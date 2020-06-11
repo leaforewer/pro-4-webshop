@@ -18,14 +18,14 @@
                 <label for="lastname">Wachtwoord</label>
                 <input type="password" class="form-control" id="password" aria-describedby="passwordHelp" name="password">
                 <small id="passwordHelp" class="form-text text-muted">*Vul hier uw wachtwoord in.</small>
-            </div>                       
-        </form>
-         
-        <div class="row">
-            <div class="col-12" id="loginButton">
-                <button type="button" class="btn btn-primary">versturen</button>
-            </div>
-        </div>           
+            </div> 
+            
+            <div class="col-12" id="loginButton">                
+                <button type="button" class="btn btn-primary">versturen</button>                              
+            </div>                      
+        </form>        
+            
+                   
     </div>
     
 </div>
