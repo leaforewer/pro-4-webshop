@@ -1,6 +1,6 @@
 a-home
 <?php
-    // session_start();
+    session_start();
     var_dump($_SESSION);
 
     // unset($_SESSION["id"]);
