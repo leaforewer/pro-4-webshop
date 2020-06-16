@@ -26,12 +26,8 @@
 
 <body>
     <main class="container-fluid" id="content">
-
         <!-- banner  --> <!-- NIET VERWIJDEREN AUB, BELANGRIJK VOOR INLOGPAGINA  -->
-        <section class="cointainer-fluid">
             <?php include("./banner.php"); ?>
-        </section>
-
         <!-- navbar -->
         <section class="cointainer-fluid">
             <header id="navbar">
