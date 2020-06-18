@@ -75,6 +75,9 @@
                     <a class="nav-link" id="navText" href="./index.php?content=contact">Contact</a>
                 </li>
                 <li class="nav-item <?php if ($active == "home") {echo "active";} ?>">
+                    <a class="nav-link" id="navText" href="./index.php?content=bmi">BMI</a>
+                </li>
+                <li class="nav-item <?php if ($active == "home") {echo "active";} ?>">
                     <a class="nav-link" href="./index.php?content=home"></a>
                 </li>
             </ul>              
@@ -101,10 +104,6 @@
                         echo '<li class="nav-item '; echo ($active == "r-rootpage") ? "active" : ""; echo '">
                         <a class="nav-link" href="./index.php?content=r-rootpage">rootpage</a>
                         </li>';
-
-                    break;
-                    case 'moderator':
-
 
                     break;
                     case 'customer':
