@@ -162,6 +162,20 @@
             </div>';
             header("Refresh: 3; ./index.php?content=home");
         break;
+        case 'auth-error':
+            echo'<div class="alert alert-danger w-50 mx-auto mt-5" name="alert" role="alert">
+            <h4 class="alert-heading">U bent ingelogd, u wordt doorgestuurd naar de homepage...</h4>
+            <hr>
+            </div>';
+            header("Refresh: 3; ./index.php?content=home");
+        break;
+        case 'auth-error-user':
+            echo'<div class="alert alert-danger w-50 mx-auto mt-5" name="alert" role="alert">
+            <h4 class="alert-heading">U heeft geen rechten op deze pagina, u wordt doorgestuurd naar de homepage...</h4>
+            <hr>
+            </div>';
+            header("Refresh: 3; ./index.php?content=home");
+        break;
         default:
 
     break;

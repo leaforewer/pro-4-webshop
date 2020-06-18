@@ -89,12 +89,11 @@
                 switch($_SESSION["userrole"]) {
                     case 'admin':
                         echo '<li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle '; echo (in_array($active, ["a-users", "a-reset_password"])) ? "active" : ""; echo '" href="#" id="navbarDropdownMenuLinkRight" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle '; echo (in_array($active, ["users"])) ? "active" : ""; echo '" href="#" id="navbarDropdownMenuLinkRight" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           admin workbench
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
-                          <a class="dropdown-item '; echo ($active == "a-users") ? "active" : ""; echo '" href="./index.php?content=a-users">users</a>
-                          <a class="dropdown-item '; echo ($active == "a-reset_password") ? "active" : ""; echo '" href="./index.php?content=a-reset_password">reset password</a>
+                          <a class="dropdown-item '; echo ($active == "users") ? "active" : ""; echo '" href="./index.php?content=users">users</a>
                         </div>
                       </li>';
                     break;
