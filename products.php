@@ -1,6 +1,6 @@
 <?php
 include('./connect_db.php');
-require_once('./component.php');
+// require_once('./component.php');
 ?>
 <!-- Old products
     <div class="col-12">

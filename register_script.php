@@ -66,7 +66,7 @@
                             <h1>Beste gebruiker,</h1>
                             <p>U heeft zich zojuist geregistreerd op de site www.smartwatch.com</p>
                             <p>Door het klikken op de onderstaande link voltooid u het activatieproces</p>
-                            <p>Klik <a href="http://www.smartwatches.com/index.php?content=activate&id=' . $id . '&pwh=' . $array['password_hash'] . '">hier</a> voor activatie</p>
+                            <p>Klik <a href="http://www.smartwatch.com/index.php?content=activate&id=' . $id . '&pwh=' . $array['password_hash'] . '">hier</a> voor activatie</p>
                             <p>Bedankt voor het registreren</p>
                             <p>Met vriendelijke groet,</p>
                             <p>Smartwatches</p> 

@@ -40,28 +40,28 @@
                     switch ($_SESSION["userrole"]) {
                         case 'admin':
                             echo '<li class="nav-item '; echo (in_array($active, ["a-home", ""])) ? "active": ""; echo'">
-                                    <a class="nav-link" id="navText" href="./index.php?content=a-home">home</a>
+                                    <a class="nav-link" id="navText" href="./index.php?content=a-home">Home</a>
                                  </li>';
                         break;
                         case 'root':
                             echo '<li class="nav-item '; echo (in_array($active, ["r-home", ""])) ? "active": ""; echo'">
-                                    <a class="nav-link" id="navText" href="./index.php?content=r-home">home</a>
+                                    <a class="nav-link" id="navText" href="./index.php?content=r-home">Home</a>
                                  </li>';
                         break;
                         case 'customer':
                             echo '<li class="nav-item '; echo (in_array($active, ["c-home", ""])) ? "active": ""; echo'">
-                                    <a class="nav-link" id="navText" href="./index.php?content=c-home">home</a>
+                                    <a class="nav-link" id="navText" href="./index.php?content=c-home">Home</a>
                                  </li>';
                         break;
                         default:
                             echo '<li class="nav-item '; echo (in_array($active, ["home", ""])) ? "active": ""; echo'">
-                                    <a class="nav-link" id="navText" href="./index.php?content=home">home</a>
+                                    <a class="nav-link" id="navText" href="./index.php?content=home">Home</a>
                                  </li>';
                         break;
                     }
                 } else{
                     echo '<li class="nav-item '; echo (in_array($active, ["home", ""])) ? "active": ""; echo'">
-                                    <a class="nav-link" id="navText" href="./index.php?content=home">home</a>
+                                    <a class="nav-link" id="navText" href="./index.php?content=home">Home</a>
                                  </li>';
                 }
                 ?>
