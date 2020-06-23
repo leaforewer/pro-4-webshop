@@ -7,7 +7,10 @@
                 </a>
                 <a href="./index.php?content=contact">
                     <p>Contact</p>
-                </a>                       
+                </a>     
+                <a href="./index.php?content=informatie">
+                    <p>Informatie</p>
+                </a>                  
             </div>
             <div class="col-3">                
                 <h5 id="footerText1">Account</h5>               
