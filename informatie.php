@@ -9,9 +9,9 @@
     </p>
 </div>
 
-<div id="accordion">
+<div class="row" id="accordion">
     <!-- eerste tab -->
-    <div class="card">
+    <div class="card col-12">
         <div class="card-header" id="headingOne" >
             <h5 class="mb-0">
                 <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="card_collapse_text">
@@ -30,8 +30,9 @@
             </div>
         </div>
     </div>
+    <br>
     <!-- tweede tab -->
-    <div class="card">
+    <div class="card col-12">
         <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
                 <button class="btn collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="card_collapse_text">
@@ -52,7 +53,7 @@
         </div>
     </div>
     <!-- derde tab -->
-    <div class="card">
+    <div class="card col-12">
         <div class="card-header" id="headingThree">
             <h5 class="mb-0">
                 <button class="btn collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree " id="card_collapse_text">
@@ -77,7 +78,7 @@
         </div>
     </div>
     <!-- vierde tab -->
-    <div class="card">
+    <div class="card col-12">
         <div class="card-header" id="headingFour">
             <h5 class="mb-0">
                 <button class="btn collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" id="card_collapse_text">
@@ -116,7 +117,7 @@
         </div>
     </div>
     <!-- vijfde tab -->
-    <div class="card">
+    <div class="card col-12">
         <div class="card-header" id="headingFive">
             <h5 class="mb-0">
                 <button class="btn collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" id="card_collapse_text">
