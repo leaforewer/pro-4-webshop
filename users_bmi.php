@@ -18,7 +18,7 @@ if (isset($_GET["page"])) {
 
 $start = ($page - 1) * $per_page;
 
-$sql = "SELECT * FROM `bmi` order by id limit $start,$per_page";
+$sql = "SELECT * FROM `bmi` order by bmi_id limit $start,$per_page";
 
 // Dit is de functie die de query $sql via de verbinding $conn naar de database stuurt.
 $result = mysqli_query($conn, $sql);
@@ -31,21 +31,12 @@ while ($record = mysqli_fetch_assoc($result)) {
     $records .=
         "
         <tr>
-                    <th scope='row'>" . $record["id"] . "</th>
+                    <th scope='row'>" . $record["bmi_id"] . "</th>
+                    <td>" . $record["name"] . "</td>
                     <td>" . $record["gewicht"] . "</td>
                     <td>" . $record["lengte"] . "</td>
-                    <td>" . $record["bmi"] . "</td>
-                    <td>" . $record["resultaat"] . "</td>
-                    <td>
-                        <a style=':hover color: white;' href='./index.php?content=update_users_bmi&id=" . $record["id"] . "'>
-                            <img src='./img/icons/b_edit.png' alt=; pencil'>
-                        </a>
-                    </td>
-                    <td>
-                    <a href='./index.php?content=delete_users_bmi&id=" . $record["id"] . "'>
-                        <img src='./img/icons/b_drop.png' alt=; cross'>
-                    </a>
-                </td>
+                    <td>" . $record["leeftijd"] . "</td>
+                        
                 </tr>";
 }
 
@@ -94,14 +85,14 @@ while ($record = mysqli_fetch_assoc($result)) {
                                                         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
                     <thead>
                         <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Gewicht</th>
-                            <th scope="col">Lengte</th>
-                            <th scope="col">Bmi</th>
-                            <th scope="col">Resultaat</th>
+                            <th scope="col">bmi_id</th>
+                            <th scope="col">name</th>
+                            <th scope="col">gewicht</th>
+                            <th scope="col">lengte</th>
+                            <th scope="col">leeftijd</th>
                         </tr>
                     </thead>
-                    <tbody class="user_bmi">
+                    <tbody class="users_bmi">
                         <?php
                         echo $records;
                         ?>
