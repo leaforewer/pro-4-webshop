@@ -18,7 +18,7 @@
     <div id="carouselExampleFade" class="carousel slide carousel-fade col-10" data-ride="carousel">
       <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./img/watch.jpg" class="d-block w-100" alt="...">
+            <img src="./img/beste-smartwatches-2019-GPS-2.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
             <img src="./img/smart1.jpg" class="d-block w-100" alt="...">
