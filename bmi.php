@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE HTML>
 <html>
 
 <head>
@@ -14,6 +14,14 @@
         Bereken hier uw BMI (Body Mass Index) om te kijken of u op een gezond gewicht zit.<br />
         <form action="" method="post">
             <table>
+            <tr>
+                    <td>
+                        Uw Naam:
+                    </td>
+                    <td>
+                        <input type="text" name="name" />
+                    </td>
+                </tr>
                 <tr>
                     <td>
                         Uw gewicht in kg:
@@ -40,7 +48,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="submit" name="submit" value="Bereken BMI" />
+                        <input type="submit" name="submit" value="Bereken BMI En Opslaan uw gegevens" />
                     </td>
                 </tr>
             </table>
@@ -78,16 +86,16 @@
                     print("<font color='purple'><b>U bent een overgewicht!</b></font>");
                 }
                 // 11 - 17 jaars
-                if($year >= 11 && $year < 18 && $bmi <= 16){
+                if ($year >= 11 && $year < 18 && $bmi <= 16) {
                     print("<font color='purple'><b>U bent te licht voor normalegewicht!</b></font>");
                 }
-                if($year >= 11 && $year < 18 &&  $bmi > 16 && $bmi < 22){
+                if ($year >= 11 && $year < 18 &&  $bmi > 16 && $bmi < 22) {
                     print("<font color='purple'><b>U heeft een gezond gewicht!</b></font>");
                 }
-                if($year >= 11 && $year < 18 && $bmi > 22 && $bmi < 27){
+                if ($year >= 11 && $year < 18 && $bmi > 22 && $bmi < 27) {
                     print("<font color='purple'><b>U heeft een te zware gewicht!</b></font>");
                 }
-                if($year >= 11 && $year < 18 && $bmi >= 27){
+                if ($year >= 11 && $year < 18 && $bmi >= 27) {
                     print("<font color='purple'><b>U heeft een matig overgewicht!</b></font>");
                 }
                 // > 18 Leeftijden
@@ -109,6 +117,30 @@
                 if ($bmi > 40) {
                     print("<font color='red'><b>U heeft een ziekelijk overgewicht!</b></font>");
                 }
+                // database connection
+                include("./connect_db.php");
+                include("./functions.php");
+
+                $name = sanitize($_POST["name"]);
+
+                $sql = "SELECT * FROM `bmi` WHERE `name` = '{$name}'";
+                $result = mysqli_query($conn, $sql);
+
+
+                    $sql = "INSERT INTO `bmi` (`bmi_id`,
+                                            `name`,
+                                            `gewicht`,
+                                            `lengte`,
+                                            `leeftijd`)
+                                            VALUES (NULL,
+                                            '$name', 
+                                            '$gewicht', 
+                                            '$lengte',
+                                            '$year');";
+                
+                // echo $sql;
+                // exit();
+                $result = mysqli_query($conn, $sql);
             }
         }
         ?>
