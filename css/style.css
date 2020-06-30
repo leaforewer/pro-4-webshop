@@ -43,6 +43,10 @@ img::-moz-selection {
     background: transparent;
 }
 
+.bmi {
+    margin-top: 50px;
+}
+
 #mainNav {
     background-color: #212529;
 }

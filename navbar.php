@@ -66,7 +66,7 @@
                 }
                 ?>
                 <li class="nav-item <?php if ($active == "home") {echo "active";} ?>">
-                    <a class="nav-link" id="navText" href="./index.php?content=products">Ewatches</a>
+                    <a class="nav-link" id="navText" href="./products.php">Ewatches</a>
                 </li>
                 <li class="nav-item <?php if ($active == "home") {echo "active";} ?>">
                     <a class="nav-link" id="navText" href="./index.php?content=informatie">Informatie</a>

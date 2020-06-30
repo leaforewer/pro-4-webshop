@@ -14,7 +14,8 @@
         Bereken hier uw BMI (Body Mass Index) om te kijken of u op een gezond gewicht zit.<br />
         <form action="" method="post">
             <table>
-            <tr>
+                <br>
+            <tr class="bmi">
                     <td>
                         Uw Naam:
                     </td>
@@ -22,7 +23,7 @@
                         <input type="text" name="name" />
                     </td>
                 </tr>
-                <tr>
+                <tr class="bmi">
                     <td>
                         Uw gewicht in kg:
                     </td>
@@ -30,7 +31,7 @@
                         <input type="int" name="gewicht" />
                     </td>
                 </tr>
-                <tr>
+                <tr class="bmi">
                     <td>
                         Uw lengte in cm:
                     </td>
@@ -38,16 +39,17 @@
                         <input type="int" name="lengte" />
                     </td>
                 </tr>
-                <tr>
+                <tr class="bmi">
                     <td>
                         Uw leeftijd invullen:
                     </td>
                     <td>
                         <input type="int" name="year" />
                     </td>
-                </tr>
+                </tr class="bmi">
                 <tr>
                     <td>
+                        <br>
                         <input type="submit" name="submit" value="Bereken BMI En Opslaan uw gegevens" />
                     </td>
                 </tr>
