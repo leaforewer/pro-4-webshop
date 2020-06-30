@@ -1,6 +1,7 @@
 <?php
 session_start();
 $products_ids = array();
+session_destroy(); 
 
 //check if Add to Cart button has been submitted
 if (filter_input(INPUT_POST, 'add_to_cart')) {
@@ -11,7 +12,7 @@ if (filter_input(INPUT_POST, 'add_to_cart')) {
         $product_ids = array_column($_SESSION['shopping_cart'], 'productid');
 
         if (!in_array(filter_input(INPUT_GET, 'productid'), $products_ids)) {
-            $_SESSION['shopping_cart'][0] = array(
+            $_SESSION['shopping_cart'][$count] = array(
                 'productid' => filter_input(INPUT_GET, 'productid'),
                 'name' => filter_input(INPUT_POST, 'name'),
                 'price' => filter_input(INPUT_POST, 'price'),
@@ -19,10 +20,10 @@ if (filter_input(INPUT_POST, 'add_to_cart')) {
             );
         } else { // product is al exists, increase quantity
             //match array key to id of the prodcut being added to the cart
-            for ($i = 0; $i < $count($product_ids); $i++) {
+            for ($i = 0; $i < count($product_ids); $i++) {
                 if ($products_ids[$i] == filter_input(INPUT_GET, 'productid')) {
 
-                    $_SESSION['shoppping'][$i]['quantity'] += filter_input(INPUT_POST, 'quantity');
+                    $_SESSION['shopping_cart'][$i]['quantity'] += filter_input(INPUT_POST, 'quantity');
                 }
             }
         }
@@ -36,14 +37,24 @@ if (filter_input(INPUT_POST, 'add_to_cart')) {
         );
     }
 }
-// print_r($_SESSION);
+if(filter_input(INPUT_GET, 'action') == 'delete'){
+    foreach($_SESSION['shopping_cart'] as $key => $product){
+        if ($product['productid'] == filter_input(INPUT_GET, 'productid')){
+            //remove product from the shopping cart
+            unset($_SESSION['shopping_cart']['$key']);
+        }
+    }
+    //reset session array keys so they match with $product_ids numeric array
+    $_SESSION['shopping_cart'] = array_values($_SESSION['shopping_cart']);
+}
+print_r($_SESSION);
 
-// function pre_r($array)
-// {
-//     echo '<pre>';
-//     print_r($array);
-//     echo '<pre>';
-// }
+function pre_r($array)
+{
+    echo '<pre>';
+    print_r($array);
+    echo '<pre>';
+}
 ?>
 
 
@@ -75,6 +86,7 @@ if (filter_input(INPUT_POST, 'add_to_cart')) {
 </head>
 
 <body>
+    <br><br>
     <header id="navbar">
         <div class="row">
             <div class="col-12">
@@ -125,6 +137,7 @@ if (filter_input(INPUT_POST, 'add_to_cart')) {
         </div>
 
     </header>
+    <br> <br>
     <div class="container">
         <?php
 
@@ -183,8 +196,8 @@ if (filter_input(INPUT_POST, 'add_to_cart')) {
                             <td><?php echo $product['quantity']; ?></td>
                             <td>€<?php echo $product['price']; ?></td>
                             <td><?php
-                                // $format = number_format(floatval($product['quantity'] * $product['price']), 2);
-                                echo number_format($product['quantity'] * $product['price'], 2); ?></td>
+                                //  $format = number_format(floatval($product['quantity'] * $product['price']), 2);
+                                echo number_format(floatval($product['quantity']) * floatval($product['price']), 2); ?></td>
                             <td>
                                 <a href="products.php?action=delete&id=<?php echo $product['productid'] ?>">
                                     <div class="btn-danger">Remove</div>
@@ -192,19 +205,19 @@ if (filter_input(INPUT_POST, 'add_to_cart')) {
                             </td>
                         </tr>
                     <?php
-                        $total = $total + ($product['quantity'] * $product['price']);
+                        $total = $total + (floatval($product['quantity']) * floatval($product['price']));
                     endforeach;
                     ?>
                     <tr>
                         <td colspan="3" align="right">Total</td>
-                        <td align="right">€ <?php echo number_format($total, 2); ?></td>
+                        <td align="right">€ <?php echo number_format(floatval($total), 2); ?></td>
                         <td></td>
                     </tr>
                     <tr>
                         <!-- Show checkout button only if the shopping cart is not empty -->
                         <td colspan="5">
                             <?php
-                            if (isset($_SESSION['shoppping_cart'])) :
+                            if (isset($_SESSION['shopping_cart'])) :
                                 if (count($_SESSION['shopping_cart']) > 0) :
                             ?>
                                     <a href="#" class="button">Checkout</a>
