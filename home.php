@@ -45,7 +45,7 @@
         <img src="./img/cart (1).png" class="card-img-top" alt="...">
           <div class="card-body">            
             <p class="card-text">Klik hier om naar ons assortiment van ewatches te gaan.</p>
-            <a href="#" class="btn btn-primary">Klik hier</a>
+            <a href="./index.php?content=products" class="btn btn-primary">Klik hier</a>
           </div>
       </div>
     </div>
@@ -54,7 +54,7 @@
           <img src="./img/faq-icon.png" class="card-img-top" alt="...">
             <div class="card-body">              
               <p class="card-text">Heeft u vragen over onze levering, specificaties en meer? Klik dan hier om op onze FAQ pagina te kijken of uw vraag er tussen staat.</p>
-              <a href="#" class="btn btn-primary">Klik hier</a>
+              <a href="./index.php?content=informatie" class="btn btn-primary">Klik hier</a>
             </div>
         </div>
     </div>
@@ -63,7 +63,7 @@
           <img src="./img/contact-3.jpg" class="card-img-top" alt="...">
             <div class="card-body">              
               <p class="card-text">Heeft u een opmerking, een klacht of en vraag die niet tussen de FAQ's staat? Klik dan hier om ons contact formulier in te vullen.</p>
-              <a href="#" class="btn btn-primary">Klik hier</a>
+              <a href="./index.php?content=contact" class="btn btn-primary">Klik hier</a>
             </div>
         </div>
     </div>
