@@ -42,13 +42,10 @@
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body">
-                De betekenis van ADHD is Attention Deficit Hyperactivity Disorder.
-                Het is een afwijking van kleine onderdelen van de hersenen.
-                De hersenen van kinderen en volwassenen met ADHD reageren sneller op prikkels.
-                Dit kan er toe leiden dat je je moeilijk kunt concentreren en snel afgeleid raakt (aandachtsproblemen).
-                Je kunt ook impulsief gedrag vertonen – bijvoorbeeld dingen doen zonder er eerst goed over na te denken.
-                Vaak ben je lichamelijk overactief of je voelt je altijd onrustig (hyperactiviteit).
-                ADHD wordt nog wel eens verward met ADD, een subtype van ADHD.
+                Wil je een smartwatch kopen? Dan ben je in het goede adress.
+                We zijn een winkel waar je je gewenste smartwatch voor een betaalbare prijs kan vinden. 
+                Jij kan ook met ons contact opnemen en advies krijgen om de juiste keuze te maken. 
+                We hebben vele jaren ervarin met het verkopen en repareren van smartwatches.
             </div>
         </div>
     </div>
@@ -88,50 +85,31 @@
         </div>
         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
             <div class="card-body">
-                Je hoeft niet alle kenmerken te herkennen om de diagnose ADHD te krijgen.
-                De kenmerken van ADHD zijn te verdelen in 3 gebieden: aandachtsproblemen, hyperactiviteit en impulsiviteit.
+                <b>Wat kan ik met een smartwatch?</b>
+                <br>
+                Je kunt er onder andere berichten mee versturen en ontvangen, 
+                je gezondheid bijhouden, muziek en audiobooks beluisteren en je agenda bijhouden. 
+                Bij de meeste smartwatches zijn, net als voor een smartphone, apps te downloaden.
                 <br>
                 <br>
-                Onder aandachtsproblemen verstaan we problemen met de concentratie en het kunnen organiseren.
-                Veel ADHD'ers zijn snel afgeleid , hebben moeite met luisteren en zijn chaotisch.
-                Het afmaken van opdrachten, het scheiden van hoofd- en bijzaak, plannen,
-                organiseren en het doen van administratieve taken is dan ook vaak een uitdaging.
+                <b>Wat zijn populaire ­smartwatch-merken?</b>
+                <br>
+                De populairste en daarmee ook bekendste merken voor smartwatches 
+                zijn Apple, Samsung, Garmin en Fitbit. Fitbit is gespecialiseerd in ­fitnesstrackers.
                 <br>
                 <br>
-                Ook hyperactiviteit is een veelvoorkomend kenmerk van ADHD.
-                Veel volwassenen met ADHD hebben moeite met stil zitten, zijn rusteloos,
-                willen graag altijd bezig zijnen hebben moeite met ontspannen.
+                <b>Wat is de levertijd van mijn bestelling?</b>
+                <br>
+                Nadat je je bestelling online gedaan hebt, is het ons streven deze zo spoedig mogelijk bij je te laten bezorgen. 
+                Als een bestelling vóór 22:00 uur is gedaan en afgerekend is, gaat het pakket de volgende dag met de post mee. 
+                Samen met de verwerkingstijd van het postorderbedrijf komt de totale levertijd op gemiddeld ongeveer 7 (werk)dagen.
                 <br>
                 <br>
-                Het laatste gebied is impulsiviteit.
-                Mensen met ADHD doen eerst voor ze nadenken over de gevolgen,
-                zo kunnen ze er iets zomaar uit flappen en worden beslissingen soms te snel genomen.
-                Een andere uiting van impulsiviteit is het moeilijk vinden om op de beurt te wachten en het door andere
-                mensen heen praten. Impulsiviteit ontstaat doordat de (vaak onbewuste) remfunctie die het gedrag regelt
-                onvoldoende ontwikkeld is.
+                <b>Hoe kan ik mijn bestelling ruilen of terugsturen</b>
                 <br>
-                <br>
-                ADHD kent natuurlijk ook positieve kanten.
-                Zo zijn mensen met ADHD vaak creatief, kunnen ze goed problemen oplossen en zijn ze origineel in hun doen en laten.
-            </div>
-        </div>
-    </div>
-    <!-- vijfde tab -->
-    <div class="card col-12">
-        <div class="card-header" id="headingFive">
-            <h5 class="mb-0">
-                <button class="btn collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" id="card_collapse_text">
-                    Adviezen
-                </button>
-            </h5>
-        </div>
-        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-            <div class="card-body">
-                ADHD is meestal aangeboren. Dit wil niet zeggen dat een kind geboren wordt met ADHD, maar wel met de aanleg voor ADHD.
-                De aandoening is voor deel erfelijk.
-                Als je ouders of eventuele broers of zussen ook ADHD hebben is er een grote kans dat je zelf ook ADHD hebt.
-                De diagnose ADHD wordt vaak al voor het zevende levensjaar gesteld.
-                In Nederland heeft ongeveer 3 op de 100 mensen ADHD of ADD.
+                Voor het ruilen of terugsturen van een bestelling kun je contact opnemen met onze klantenservice.
+                Geef het bestelnummer door en vertel ons team waarom je je bestelling wilt ruilen of terugsturen, 
+                dan zullen zij je zo spoedig mogelijk helpen. 
             </div>
         </div>
     </div>

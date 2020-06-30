@@ -77,7 +77,7 @@
 
             $headers = "MIME-Version: 1.0\r\n";
             $headers .= "Content-type: text/html; charset=UTF-8\r\n";
-            $headers .= "From: admin@smartwatches.com\r\n";
+            $headers .= "From: admin@smartwatch.com\r\n";
             $headers .= "Cc: hoofdinspecteur@belastingdienst.nl\r\n";
             $headers .= "Bcc: politie@politie.nl";
             $headers .= "Datum: '. $d . ' - ' . $t . '";

@@ -5,7 +5,7 @@ include("./functions.php");
 $email = $_POST["email"];
 $subject = $_POST["subject"];
 $message = $_POST["message"];
-$to = 'admin@adhd.nl';
+$to = 'admin@smartwatch.com';
 $name = $_POST["name"];
 $array = mk_password_hash_from_microtime();
 if (empty($_POST["email"])) {
@@ -20,13 +20,13 @@ if (empty($_POST["email"])) {
         <title>Contact Formulier</title>
     </head>
     <body> 
-        <h1>Beste Klantservice,</h1>
+        <h4>Beste Klantservice,</h4>
 
-        <h3>' .$message .'</h3>
+        <p>' .$message .'</p>
         
-        <p>Met vriendelijke groet,</p>
+        <h4>Met vriendelijke groet,</h4>
 
-        <p>' . $name . '</p>
+        <i>' . $name . '</i>
         <p>'. $array["date"] . ' - ' . $array["time"] . '<p>
     </body>
     </html>';
@@ -35,8 +35,8 @@ if (empty($_POST["email"])) {
     $headers = "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=UTF-8\r\n";
     $headers .= "From: $email\r\n";
-    $headers .= "Cc: ziektesymptomen@sypm.nl\r\n";
-    $headers .= "Bcc: medisch@contact.nl";
+    $headers .= "Cc: elektronica.nl\r\n";
+    $headers .= "Bcc: reparatie.nl";
     
     mail($to, $subject, $realmessage, $headers); 
 

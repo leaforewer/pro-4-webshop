@@ -176,6 +176,14 @@
             </div>';
             header("Refresh: 3; ./index.php?content=home");
         break;
+        case 'nb-inschrijven':
+            echo'<div class="alert alert-success w-50 mx-auto mt-5" name="alert" role="alert">
+            <h4 class="alert-heading">U heeft zich succesvol ingeschreven voor de nieuwsbrief!</h4>
+            <p>U wordt teruggestuurd naar de homepagina</p>
+            <hr>
+            </div>';
+            header("Refresh: 3; ./index.php?content=home");
+        break;
         default:
 
     break;
