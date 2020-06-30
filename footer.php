@@ -38,12 +38,12 @@
             </div>
             <div class="col-3">
                 <h5>Schrijf je in voor de nieuwsbrief!</h5>
-                <form class="form-inline" id="newsletter">
+                <form action="./index.php?content=nb_inschrijven" method="post" class="form-inline" id="newsletter" >
                     <input class="form-control mr-sm-2" type="email" placeholder="Voer uw email adres in" aria-label="Search">
-                    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Inschrijven</button>
+                    <button class="btn btn-outline-warning my-2 my-sm-3" type="submit">Inschrijven</button>
                 </form>
                 <br/>
-                <h5>Volg ons:</h5>
+                <h5>Volg ons: smartwatch.nl</h5>
             </div>
         </div>
     </div>

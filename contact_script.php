@@ -5,7 +5,7 @@ include("./functions.php");
 $email = $_POST["email"];
 $subject = $_POST["subject"];
 $message = $_POST["message"];
-$to = 'admin@smartwatches.com';
+$to = 'admin@smartwatch.com';
 $name = $_POST["name"];
 $array = mk_password_hash_from_microtime();
 if (empty($_POST["email"])) {
