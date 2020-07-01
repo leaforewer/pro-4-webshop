@@ -53,7 +53,7 @@
 
         <!-- footer -->
         <section>
-            <footer id="footer" class="container-fluid">
+            <footer id="footer" class="container-fluid bottom">
                 <div class="row">
                     <div class="col-12">
                         <?php include("./footer.php") ?>

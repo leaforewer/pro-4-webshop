@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+// session_start();
 
 require_once ('php/CreateDb.php');
 require_once ('./php/component.php');
@@ -17,7 +17,7 @@ if (isset($_POST['add'])){
 
         if(in_array($_POST['product_id'], $item_array_id)){
             echo "<script>alert('Product is already added in the cart..!')</script>";
-            echo "<script>window.location = 'products.php'</script>";
+            echo "<script>window.location = './index.php?content=products'</script>";
         }else{
 
             $count = count($_SESSION['cart']);

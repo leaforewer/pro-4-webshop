@@ -176,9 +176,31 @@
             </div>';
             header("Refresh: 3; ./index.php?content=home");
         break;
+        case 'no-enough-space-postcode':
+            echo'<div class="alert alert-danger w-50 mx-auto mt-5" name="alert" role="alert">
+            <h4 class="alert-heading">U heeft geen of onjuiste postcode ingevoerd (Er moet geen spatie zijn in postcode), u wordt doorgestuurd naar de products pagina...</h4>
+            <hr>
+            </div>';
+            header("Refresh: 5; ./products.php");
+        break;
+        case 'no-postcode':
+            echo'<div class="alert alert-danger w-50 mx-auto mt-5" name="alert" role="alert">
+            <h4 class="alert-heading">U heeft geen postcode ingevoerd, u wordt doorgestuurd naar de products pagina...</h4>
+            <hr>
+            </div>';
+            header("Refresh: 5; ./products.php");
+        break;
         case 'nb-inschrijven':
             echo'<div class="alert alert-success w-50 mx-auto mt-5" name="alert" role="alert">
             <h4 class="alert-heading">U heeft zich succesvol ingeschreven voor de nieuwsbrief!</h4>
+            <p>U wordt teruggestuurd naar de homepagina</p>
+            <hr>
+            </div>';
+            header("Refresh: 3; ./index.php?content=home");
+        break;
+        case 'order-succesvol':
+            echo'<div class="alert alert-success w-50 mx-auto mt-5" name="alert" role="alert">
+            <h4 class="alert-heading">Uw bestelling is succesvol geregeld. U kunt het overzicht van uw bestelling via linkjes in home zien...</h4>
             <p>U wordt teruggestuurd naar de homepagina</p>
             <hr>
             </div>';
