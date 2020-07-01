@@ -1,6 +1,6 @@
 <?php
 
-// session_start();
+session_start();
 
 require_once("php/CreateDb.php");
 require_once("php/component.php");
@@ -13,7 +13,7 @@ if (isset($_POST['remove'])) {
             if ($value["product_id"] == $_GET['id']) {
                 unset($_SESSION['cart'][$key]);
                 echo "<script>alert('Product has been Removed...!')</script>";
-                echo "<script>window.location = './index.php?content=cart'</script>";
+                echo "<script>window.location = './cart.php'</script>";
             }
         }
     }
