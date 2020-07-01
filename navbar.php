@@ -92,23 +92,25 @@
                 switch($_SESSION["userrole"]) {
                     case 'admin':
                         echo '<li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle '; echo (in_array($active, ["users", "users_bmi"])) ? "active" : ""; echo '" href="#" id="navbarDropdownMenuLinkRight" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle '; echo (in_array($active, ["users", "users_bmi", "users_order"])) ? "active" : ""; echo '" href="#" id="navbarDropdownMenuLinkRight" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           admin workbench
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
                           <a class="dropdown-item '; echo ($active == "users") ? "active" : ""; echo '" href="./index.php?content=users">users</a>
                           <a class="dropdown-item '; echo ($active == "users_bmi") ? "active" : ""; echo '" href="./index.php?content=users_bmi">users_bmi</a>
+                          <a class="dropdown-item '; echo ($active == "users_order") ? "active" : ""; echo '" href="./index.php?content=users_order">users_order</a>
                         </div>
                       </li>';
                     break;
                     case 'root':
                         echo '<li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle '; echo (in_array($active, ["users", "users_bmi"])) ? "active" : ""; echo '" href="#" id="navbarDropdownMenuLinkRight" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle '; echo (in_array($active, ["users", "users_bmi", "users_order"])) ? "active" : ""; echo '" href="#" id="navbarDropdownMenuLinkRight" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           admin workbench
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
                           <a class="dropdown-item '; echo ($active == "users") ? "active" : ""; echo '" href="./index.php?content=users">users</a>
                           <a class="dropdown-item '; echo ($active == "users_bmi") ? "active" : ""; echo '" href="./index.php?content=users_bmi">users_bmi</a>
+                          <a class="dropdown-item '; echo ($active == "users_order") ? "active" : ""; echo '" href="./index.php?content=users_order">users_order</a>
                         </div>
                       </li>';
 
