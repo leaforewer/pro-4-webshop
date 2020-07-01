@@ -12,12 +12,12 @@
             <div class="form-group">
                 <label for="firstname">Gebruikersnaam</label>
                 <input type="text" class="form-control" id="username" aria-describedby="usernameHelp" name="username" autofocus>
-                <small id="Help" class="form-text ">*Verplicht veld</small>
+                <small id="Help" class="form-text " style="color: black;">*Verplicht veld</small>
             </div>
             <div class="form-group">
                 <label for="infix">E-mailadres</label>
                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
-                <small id="Help" class="form-text ">*Verplicht veld</small>
+                <small id="Help" class="form-text " style="color: black;">*Verplicht veld</small>
             </div>
             
             <div class="form-group">
@@ -36,7 +36,5 @@
             </div>
         </form>
     </div>
-    <div class="col-6">
-        <img src="./img/registreren1.png" id="registerImage" alt="aanmelden">
-    </div>
+
 </div>

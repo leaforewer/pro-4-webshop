@@ -29,8 +29,5 @@ if (!(isset ($_GET["content"]) && isset ($_GET["id"]) && isset ($_GET["pwh"]))){
             </div>
         </form>
     </div>
-    <div class="col-6">
-        <img src="./img/registreren.jpg" style="width: 450px; height: 450px; " alt="registreren">
-        <!-- <img src="./img/registreren.jpg" style="width: 450px; height: 450px; " alt="registreren"> -->
-    </div>
+
 </div>
