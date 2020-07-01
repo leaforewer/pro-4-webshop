@@ -36,13 +36,15 @@ if (empty($postcode)) {
                                     `last_n`,
                                     `straat`,
                                     `stad`,
-                                    `postcode`)
+                                    `postcode`,
+                                    `status`)
                                     VALUES (NULL,
                     '$first_n', 
                     '$last_n', 
                     '$straat',
                     '$stad',
-                    '$postcode');";
+                    '$postcode',
+                        0);";
         // echo $sql;
         // exit();
 

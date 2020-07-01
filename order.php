@@ -58,7 +58,7 @@
                                 <input class="order-form-input" name="stad" placeholder="Stad">
                             </div>
                             <div class="col-12 col-sm-6 mt-2 pr-sm-2">
-                                <input class="order-form-input" name="postcode" placeholder="Post Code">
+                                <input class="order-form-input" name="postcode" placeholder="Post Code (1111AA)">
                             </div>
                         </div>
 
