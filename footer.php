@@ -23,16 +23,16 @@
             </div>
             <div class="col-3">               
                 <h5 id="footerText1">Onze Beste Producten</h5>                
-                    <a href="./index.php?content=products">
+                    <a href="./products.php">
                         <p>Apple</p>                    
                     </a>
-                    <a href="./index.php?content=products">
+                    <a href="./products.php">
                         <p>Samsung</p>
                     </a>
-                    <a href="./index.php?content=products">
+                    <a href="./products.php">
                         <p>Garmin</p>                    
                     </a>
-                    <a href="./index.php?content=products">
+                    <a href="./products.php">
                         <p>Huawei</p>                   
                     </a>
             </div>

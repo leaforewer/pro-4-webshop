@@ -6,7 +6,7 @@
         <p class="lead">Dit is de website om uw favoriete smartwatch te kopen</p>
         <hr class="my-4">
         <p>Klik op de onderstaande button om ons assortiment te bekijken.</p>
-        <a class="btn btn-primary btn-lg" href="./index.php?content=products" role="button">Klik hier</a>
+        <a class="btn btn-primary btn-lg" href="./products.php" role="button">Klik hier</a>
     </div>
     <div class="col-2"></div>
 </div>
@@ -45,7 +45,7 @@
         <img src="./img/cart (1).png" class="card-img-top" alt="...">
           <div class="card-body">            
             <p class="card-text">Klik hier om naar ons assortiment van ewatches te gaan.</p>
-            <a href="./index.php?content=products" class="btn btn-primary" >Klik hier</a>
+            <a href="./products.php" class="btn btn-primary" >Klik hier</a>
           </div>
       </div>
     </div>
